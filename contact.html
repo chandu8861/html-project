@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chandu S">
+    <meta name="description" content="Contact Information of The Malnad Cafe">
+    <title>Contact US - TMC</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+        html {
+            font-size: 22px;
+        }
+
+        body {
+            min-height: 100vh;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            border-left: 1px solid #333;
+            border-right: 1px solid #333;
+        }
+
+        th,
+        td,
+        caption {
+            border: 1px solid #333;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: separate;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact US</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#about">About <abbr title="The Malnad Cafe">TMC</abbr></a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="images/coffee.jpg" alt="filter coffee image" title="Authentic Malnad Filter Coffee" width="400"
+                height="267">
+            <figcaption>Experience the true flavor of Malnad</figcaption>
+        </figure>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Our contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us A Message</legend>
+                    <p>
+                        <label for="firstName">First Name : </label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Ex: Chandu" autocomplete="on"
+                            required autofocus>
+                    </p>
+
+                    <p>
+                        <label for="lastName">Last Name : </label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Ex: Srinivas" autocomplete="on">
+                    </p>
+
+                    <p>
+                        <label for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </label>
+                        <input type="text" name="email" id="email" placeholder="Ex: Example@email.com"
+                            autocomplete="on">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone No &nbsp; :</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Ex: 123456789" autocomplete="on">
+                    </p>
+
+                    <p>
+                        <label for="message">Your Message : </label>
+                        <br>
+                        <textarea name="message" id="message" cols="50" rows="15"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Our Location </h2>
+            <address>
+                The Malnad Cafe <br>
+                12, 5th Main Road, <br>
+                Indiranagar, Bengaluru, <br>
+                Karnataka &hyphen; 560038, India <br>
+
+
+                <p>
+                    Phone : <a href="tel:+1234567890">+91-1234567890</a>
+                </p>
+
+                <p>
+                    Email : <a href="mailto:info@themalnadcafe.com">info@themalnadcafe.com</a>
+                </p>
+            </address>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; The Malnad Cafe</p>
+    </footer>
+</body>
+
+</html>
